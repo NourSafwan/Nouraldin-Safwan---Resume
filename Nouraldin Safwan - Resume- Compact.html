@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouraldin Safwan - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact;
+        }
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body, h1, h2, h3, h4, p, a, span, li, div {
+                font-family: Arial, sans-serif !important;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                -webkit-font-smoothing: antialiased;
+                background-color: #ffffff !important; 
+            }
+            .no-print {
+                display: none !important;
+            }
+            .printable-area {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0.5in !important; /* A standard margin for A4 */
+                border: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                background-color: #ffffff !important; 
+            }
+            a {
+                color: inherit !important;
+                text-decoration: none !important;
+            }
+            section, .project-item {
+                break-inside: avoid; 
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Print Button -->
+    <div class="no-print fixed top-4 right-4 z-50">
+        <button onclick="window.print()" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print or Save as PDF
+        </button>
+    </div>
+
+    <div class="printable-area max-w-4xl mx-auto my-12 p-10 bg-white rounded-lg shadow-2xl">
+        <!-- Header -->
+        <header class="text-center mb-6">
+            <h1 class="text-4xl font-bold text-gray-900 tracking-tight">Nouraldin Safwan</h1>
+            <h2 class="text-xl font-medium text-blue-600 mt-2">Software Engineer | Full Stack Developer</h2>
+            <div class="mt-4 flex justify-center items-center flex-wrap gap-x-5 gap-y-1 text-sm text-gray-600">
+                <a href="mailto:nouraldin374@gmail.com" class="hover:text-blue-600">nouraldin374@gmail.com</a>
+                <span class="text-gray-300">|</span>
+                <a href="tel:+201555473000" class="hover:text-blue-600">(+20) 15-5547-3000</a>
+                <span class="text-gray-300">|</span>
+                <a href="https://noursafwan.vercel.app" target="_blank" class="hover:text-blue-600">noursafwan.vercel.app</a>
+                <span class="text-gray-300">|</span>
+                <a href="https://linkedin.com/in/NourSafwan" target="_blank" class="hover:text-blue-600">linkedin.com/in/NourSafwan</a>
+                <span class="text-gray-300">|</span>
+                <a href="https://github.com/NourSafwan" target="_blank" class="hover:text-blue-600">github.com/NourSafwan</a>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-3 gap-8">
+            <!-- Main Column -->
+            <div class="col-span-2">
+                <!-- Summary -->
+                <section>
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">PROFESSIONAL SUMMARY</h3>
+                    <p class="text-gray-700 leading-relaxed text-sm">
+                        Innovative Full Stack Engineer with 3 years of experience delivering high-impact web applications from concept to deployment. Specializing in the MERN stack, Next.js, and TypeScript, with a proven track record of increasing user engagement by up to 40% through intuitive UI/UX and optimized performance. Passionate about leveraging technologies like AI to build scalable solutions for complex challenges.
+                    </p>
+                </section>
+
+                <!-- Experience -->
+                <section class="mt-5">
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">PROFESSIONAL EXPERIENCE</h3>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="text-md font-semibold text-gray-900">Full Stack Developer</h4>
+                            <p class="text-sm font-medium text-gray-500">09/2022 - Present</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-700">Freelance</p>
+                        <ul class="list-disc list-inside mt-1 text-sm text-gray-700 space-y-1">
+                            <li>Engineered responsive UIs with React/Next.js, boosting user engagement by up to 40% on key client projects.</li>
+                            <li>Built scalable RESTful APIs with Node.js/Express, optimizing database queries to reduce page load times by 30%.</li>
+                            <li>Collaborated with clients to translate business requirements into technical solutions and project deliverables.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <!-- Projects -->
+                <section class="mt-5">
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">KEY PROJECTS</h3>
+                    <div class="space-y-4">
+                        <div class="project-item">
+                            <h4 class="text-md font-semibold text-gray-900">Itqan Pro - Multilingual Business Platform</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Led frontend development for a multilingual (AR/EN) business platform with full RTL support, delivering a backend-ready UI with authentication and subscription components.
+                            </p>
+                        </div>
+                         <div class="project-item">
+                            <h4 class="text-md font-semibold text-gray-900">DeepBit - AI-Powered Data Visualization Platform</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Architected a platform for the oil & gas industry to analyze geological data, featuring a chat interface powered by the Google Gemini AI API for natural language queries.
+                            </p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="text-md font-semibold text-gray-900">Batal Sokkar - Diabetes Management System</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Engineered a full-stack HealthTech app with a smart system to calculate insulin dosages based on glucose levels and a comprehensive food database.
+                            </p>
+                        </div>
+                        <div class="project-item">
+                            <h4 class="text-md font-semibold text-gray-900">Apple iPhone 15 Pro - Interactive Website Recreation</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Crafted a pixel-perfect recreation of Apple's website with interactive 3D models (Three.js) and GSAP animations, increasing user interaction time by 50%.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar Column -->
+            <div>
+                <!-- Skills -->
+                <section>
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">TECHNICAL SKILLS</h3>
+                    <div class="text-sm space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Frontend</h4>
+                            <p class="text-gray-600 leading-snug">React.js, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, GSAP, Three.js, Recharts, Vite</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Backend</h4>
+                            <p class="text-gray-600 leading-snug">Node.js, Express.js, RESTful APIs</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Databases</h4>
+                            <p class="text-gray-600 leading-snug">MongoDB, Mongoose, PostgreSQL, SQL</p>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-gray-700 mb-1">Tools & Platforms</h4>
+                            <p class="text-gray-600 leading-snug">Git, GitHub, Zustand, i18n, VPS Deployment, Linux</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="mt-5">
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">EDUCATION</h3>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 text-md">BSc in Computer Science</h4>
+                        <p class="text-sm text-gray-600">Modern University for Technology & Info. (MTI)</p>
+                        <p class="text-sm text-gray-500">2021 - 2025</p>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="mt-5">
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">CERTIFICATIONS</h3>
+                    <div class="text-sm space-y-2">
+                        <p class="text-gray-700"><span class="font-semibold">McKinsey Forward Program,</span> McKinsey & Company</p>
+                        <p class="text-gray-700"><span class="font-semibold">Front End Web Development,</span> ITI</p>
+                        <p class="text-gray-700"><span class="font-semibold">The Complete Node.js Course,</span> MaharaTech</p>
+                        <p class="text-gray-700"><span class="font-semibold">React JS,</span> MaharaTech</p>
+                    </div>
+                </section>
+                
+                <!-- Languages -->
+                <section class="mt-5">
+                    <h3 class="text-lg font-bold text-gray-800 border-b-2 border-blue-600 pb-1 mb-2">LANGUAGES</h3>
+                     <div class="text-sm space-y-1">
+                        <p class="text-gray-700"><span class="font-semibold">Arabic:</span> Native</p>
+                        <p class="text-gray-700"><span class="font-semibold">English:</span> C1 Advanced (EF SET)</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
